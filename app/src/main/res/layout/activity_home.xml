@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        tools:context=".activities.HomeActivity">
+
+
+        <include layout="@layout/toolbar" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="Lab Mail"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:id="@+id/mailLoadedText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loaded"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+
+        <LinearLayout
+            android:id="@+id/buttonGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/mail_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:drawableTop="@drawable/ic_inbox"
+                android:drawablePadding="8dp"
+                android:drawingCacheQuality="high"
+                android:padding="8dp"
+                android:text="View Mail"
+                android:textAllCaps="false"
+                android:textColor="#777"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/other_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:drawableTop="@drawable/ic_filters"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:text="Filters"
+                android:textAllCaps="false"
+                android:textColor="#777"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/setting_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:drawableTop="@drawable/ic_settings"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:text="Settings"
+                android:textAllCaps="false"
+                android:textColor="#777"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+        <!-- icons8 bubbles theme for icons-->
+        <Button
+            android:id="@+id/automate_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#fff"
+            android:drawableTop="@drawable/ic_automate"
+            android:drawablePadding="8dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="8dp"
+            android:text=" Automate "
+            android:textAllCaps="false"
+            android:textColor="#777"
+            android:textSize="14sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="32dp"
+            android:background="#eee" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Accounts"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="1 account"
+            android:textAlignment="center"
+            android:textColor="#666"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/email1_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="16dp"
+            android:background="#fff"
+            android:drawableTop="@drawable/ic_business"
+            android:drawablePadding="8dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="8dp"
+            android:text="Business"
+            android:textAllCaps="false"
+            android:textColor="#777"
+            android:textSize="14sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="32dp"
+            android:background="#eee" />
+
+    </LinearLayout>
+</ScrollView>
